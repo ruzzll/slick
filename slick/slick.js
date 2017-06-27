@@ -20,7 +20,7 @@
     if (typeof define === 'function' && define.amd) {
         define(['jquery'], factory);
     } else if (typeof exports !== 'undefined') {
-        module.exports = factory(require('jquery'));
+        module.exports = factory(jQuery);
     } else {
         factory(jQuery);
     }
